@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  font-size: 1rem;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #2A2A2A;
+  font-weight: bold;
+  
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px 80px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card.large-card {
+  width: 80%;
+  max-width: 800px;
+  margin-top: 100px;
+}
+
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Wishes Page Styles */
+.wishes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.wish-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 15px 20px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wish-card .emoji {
+  font-size: 1.8rem;
+  margin-right: 15px;
+}
+
+.wish-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+nav a.active {
+  color: black;
+  text-decoration: underline;
+}
+/* Moments Page Styles */
+.moments-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-top: 80px;
+  padding-left: 80px;
+}
+
+.moment-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.moment-item p {
+  flex: 10;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin-right: 10%;
+}
+
+.moment-image {
+  flex: 8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.moment-image img {
+  width: 100%; /* Resizes the image to match the container width */
+  height: auto; /* Maintains the image's aspect ratio */
+  border-radius: 12px; /* Optional: Rounds the edges of the image */
+  display: block;
+}
